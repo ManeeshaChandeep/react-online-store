@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+// import './App.css';
+// import React from "react";
+// import NewDash from "./pages/NewDashBoard/NewDash";
+// import Dashboard from "./pages/Dash Board/DashBoard";
+//
+// function App() {
+//   return (
+//
+// <div>
+//
+//   <NewDash/>
+// </div>
+//   );
+// }
+//
+// export default App;
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Navbar from '../src/components/Navbar/Navbar'; // Adjust the path as necessary
+import '../src/tailwind.css';
+import Homepage from "./pages/Home/homepage"; // Ensure this path points to where you have Tailwind CSS set up
+
+const App = () => (
+    <div>
+        <Homepage/>
+        {/* Other components */}
     </div>
-  );
-}
-
+);
 export default App;
+ReactDOM.render(<App />, document.getElementById('root'));
